@@ -22,6 +22,22 @@ const Book = class {
     } return 'In Stock'
   }
 
+  sellBook(numcopiesSold = 1){
+    return this.numcopies -= numcopiesSold
+  }
+
+  restock(numcopiesStocked = 5){
+    return this.numcopies += numcopiesStocked
+  }
+
+  sellBook(numcopiesSold = 1){
+    return this.numcopies -= numcopiesSold
+  }
+
+  restock(numcopiesStocked = 5){
+    return this.numcopies += numcopiesStocked
+  }
+  
 }
 
 const harryPotter = new Book('Prisoner of Azkaban', 'That Lady', '42069', 11)
